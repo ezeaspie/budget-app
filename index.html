@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Library</title>
+  <meta name="author" content="Ezequiel Espinoza">
+  <meta name="description" content="Library Project for 'The Odin Project'">
+  <meta name="keywords" content="library, project, practice">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
+  <body>
+    <div id='root'>
+      <div id='dataDisplay'>
+        <h2 class='mainDisplay'>Income $ <span id='totalIncome'>0.00</span></h2>
+        <h2 class='mainDisplay'>Expenses $ <span id='totalExpense'>0.00</span></h2>
+        <h2 class='mainDisplay'>Surplus $ <span id='totalSurplus'>0.00</span></h2>
+      </div>
+      <div id='forms'>
+        <form id="add">
+          <label>Name: <input id="incomeName" type="text" data-num='1'></input></label>
+          <label>Amount: <input id="incomeAmount" type="number" data-num='2'></input></label>
+          <input id="addSubmit" type="submit" value="Add" ></input>
+        </form>
+        <form id="subtract">
+          <label>Name: <input id="expenseName" type="text" data-num='3'></input></label>
+          <label>Amount: <input id="expenseAmount" type="number" data-num='4'></input></label>
+          <input id="subtractSubmit" type="submit" value="Add"></input>
+        </form>
+      </div>
+      <div id="lists">
+        <ul id="incomeList">
+        </ul>
+        <ul id="expenseList">
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="./jquery-3.2.1.js" type="text/javascript"></script>
+  <script src='./scripts.js' type="text/javascript"></script>
+</html>
