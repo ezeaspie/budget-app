@@ -15,17 +15,22 @@
         <h2 class='mainDisplay'>Income $ <span id='totalIncome'>0.00</span></h2>
         <h2 class='mainDisplay'>Expenses $ <span id='totalExpense'>0.00</span></h2>
         <h2 class='mainDisplay'>Surplus $ <span id='totalSurplus'>0.00</span></h2>
+        <progress id='bar' value="50"  max="100"></progress>
       </div>
       <div id='forms'>
         <form id="add">
+          <h3>Add Income</h3>
           <label>Name: <input id="incomeName" type="text" data-num='1'></input></label>
           <label>Amount: <input id="incomeAmount" type="number" data-num='2'></input></label>
           <input id="addSubmit" type="submit" value="Add" ></input>
+          <h4 id='incomeError'>Please fill in each input with proper values.</h4>
         </form>
         <form id="subtract">
+          <h3>Add Expenses</h3>
           <label>Name: <input id="expenseName" type="text" data-num='3'></input></label>
           <label>Amount: <input id="expenseAmount" type="number" data-num='4'></input></label>
           <input id="subtractSubmit" type="submit" value="Add"></input>
+          <h4 id='expenseError'>Please fill in each input with proper values.</h4>
         </form>
       </div>
       <div id="lists">

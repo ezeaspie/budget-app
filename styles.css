@@ -1,3 +1,28 @@
 #lists {
   display: flex;
 }
+
+progress {
+  background-color: #f3f3f3;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+progress::-webkit-progress-bar {
+  background-color: #670000;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+progress::-webkit-progress-value {
+  background-color: #00a2a2;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
+progress::-moz-progress-bar {
+  background-color: #f3f3f3;
+  border: 0;
+  height: 18px;
+  border-radius: 9px;
+}
