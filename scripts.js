@@ -10,7 +10,7 @@ const paintCards = (array, dataName, whereToRender) => {
         <li class='card'>
           <h2>${currentItem.name}</h2>
           <h3>Amount: ${currentItem.amount}</h3>
-          <button class="remove" data-index = "${i}" data-array="${dataName}">Remove Book</button>
+          <button class="remove" data-index = "${i}" data-array="${dataName}">Remove</button>
         </li>`
       }
   $(whereToRender).html(HTML);

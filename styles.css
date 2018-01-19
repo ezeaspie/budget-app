@@ -1,28 +1,234 @@
-#lists {
+* {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+#lists,
+#dataDisplay,
+#add,
+#subtract
+ {
   display: flex;
 }
 
+#dataDisplay {
+  background: #373F51;
+  flex-direction: column;
+  align-items:center;
+  padding:1em;
+}
+
+.mainDisplay {
+  color:#D8DBE2;
+  margin-bottom: .3em;
+}
+
+#totalIncome {
+  color: #58A4B0;
+}
+
+#totalExpense {
+  color: #DAA49A;
+}
+
+#totalSurplus {
+  color: #A9BCD0;
+}
+
 progress {
-  background-color: #f3f3f3;
+  background-color: #DAA49A;
   border: 0;
   height: 18px;
-  border-radius: 9px;
+  border-radius:5px;
 }
 progress::-webkit-progress-bar {
-  background-color: #670000;
+  background-color: #DAA49A;
   border: 0;
   height: 18px;
-  border-radius: 9px;
+  border-radius:5px;
 }
 progress::-webkit-progress-value {
-  background-color: #00a2a2;
+  background-color: #58A4B0;
   border: 0;
   height: 18px;
-  border-radius: 9px;
+  border-radius:5px 0 0 5px;
 }
 progress::-moz-progress-bar {
-  background-color: #f3f3f3;
+  background-color: #DAA49A;
   border: 0;
   height: 18px;
-  border-radius: 9px;
+}
+
+#forms,
+#lists,
+body {
+  background:#A9BCD0;
+}
+
+#forms h4 {
+  text-align:center;
+  padding:.1em 0;
+  color: #373F51;
+}
+
+#forms label {
+  display:inline-block;
+  align-self:flex-start;
+  margin-left:1em;
+  width:80%;
+  color: #373F51;
+  font-family:Calibri;
+}
+
+#forms h3,
+.heading {
+  padding:.5em;
+  margin-bottom: .5em;;
+  background-color:#D8DBE2;
+  width:100%;
+  color:#373F51;
+  text-align:center;
+}
+
+input{
+  display:block;
+  width:100%;
+  margin:0;
+  margin: .5em 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-family:Georgia;
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  padding: .5em;
+  width: 100%;
+  background-color: #e8eeef;
+  color:#8a97a0;
+}
+
+input[type="submit"], 
+button {
+  display:block;
+  width:50%;
+  border:0;
+  padding: .5em;
+  border-radius:5px;
+  font-family:Georgia;
+  font-weight:bold;
+  margin: 1em 0 ;
+}
+
+#add input[type="submit"] {
+   background: #58A4B0;
+   color:#373F51;
+}
+
+#add input[type="submit"]:hover {
+   background: #24474c;
+   color:#D8DBE2;
+   cursor:pointer;
+}
+
+#subtract input[type="submit"] {
+   background: #DAA49A;
+   color: #373F51;
+}
+
+#subtract input[type="submit"]:hover {
+   background: #8e5044;
+   color:#D8DBE2;
+   cursor:pointer;
+}
+
+#add,
+#subtract {
+  flex-direction:column;
+  align-items:center;
+}
+
+#lists{
+  flex-direction: column;
+}
+
+#lists ul {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  background: #373F51;
+  width:90%;
+  color: #D8DBE2;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  padding:.5em 0;
+  font-family:Cambria;
+}
+
+#incomeList .card h3 {
+  color: #58A4B0;
+}
+
+#expenseList .card h3 {
+  color: #DAA49A;
+}
+
+#lists button:hover {
+  background:#a2a2a2;
+  cursor:pointer;
+}
+#lists button:active {
+  background:#DAA49A;
+  cursor:pointer;
+}
+
+@media screen and (min-width:320px) {
+  #forms label {
+    width:88%
+  }
+}
+
+@media screen and (min-width:760px){
+  #forms{
+    display:flex;
+    justify-content:space-around;
+  }
+  #forms h3{
+    border-radius:0 0 5px 5px;
+  }
+  #forms label {
+    margin: 0;
+  }
+  #lists{
+    flex-direction:row;
+    justify-content:space-around;
+  }
+  .card{
+    width:100%;
+    min-width:300px;
+    margin-left:1em;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  form {
+    width:100%;
+  }
+  #forms label {
+    margin:1em 2em;
+  }
+  .card{
+    min-width:450px;
+  }
+
 }
