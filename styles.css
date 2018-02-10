@@ -111,7 +111,7 @@ input[type="number"] {
   color:#8a97a0;
 }
 
-input[type="submit"], 
+input[type="submit"],
 button {
   display:block;
   width:50%;
@@ -229,6 +229,45 @@ button {
   }
   .card{
     min-width:450px;
+  }
+
+}
+
+@media print {
+  #forms {
+    display:none;
+  }
+
+  body,
+  #lists,
+  #dataDisplay,
+  #add,
+  #subtract {
+    background: #fff;
+  }
+
+  .mainDisplay,
+  #totalIncome,
+  #totalExpense,
+  #totalSurplus {
+  color:#000;
+  margin-bottom: .3em;
+  }
+
+  #root{
+    max-width:1000px;
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+  }
+  button{
+    display:none;
+  }
+  .card,
+  #incomeList .card h3,
+  #expenseList .card h3 {
+    background: #fff;
+    color: #000;
   }
 
 }
