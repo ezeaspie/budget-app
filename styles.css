@@ -4,6 +4,11 @@
   list-style:none;
 }
 
+#root{
+  max-width:980px;
+  margin:0 auto;
+}
+
 #lists,
 #dataDisplay,
 #add,
